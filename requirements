@@ -1,6 +1,6 @@
 streamlit
-torch
-diffusers
-Pillow
-cloudinary
-transformers
+torch==2.1.0
+diffusers==0.25.0
+transformers==4.38.1
+Pillow==10.2.0
+cloudinary==1.37.0
