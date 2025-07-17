@@ -9,9 +9,9 @@ from cloudinary.utils import cloudinary_url
 
 # ---- Cloudinary Configuration ----
 cloudinary.config(
-    cloud_name="dckpbi8fc",
-    api_key="732772394611716",
-    api_secret="URjqTbsSEQPs5SRIDh247ZXSxI0",  # Replace with your actual API secret
+    cloud_name=st.secrets["CLOUDINARY"]["cloud_name"],
+    api_key=st.secrets["CLOUDINARY"]["api_key"],
+    api_secret=st.secrets["CLOUDINARY"]["api_secret"],
     secure=True
 )
 
