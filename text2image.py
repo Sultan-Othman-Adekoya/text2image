@@ -36,7 +36,7 @@ def load_model():
     pipe = StableDiffusionPipeline.from_pretrained(
         "runwayml/stable-diffusion-v1-5", torch_dtype=torch.float16
     )
-    return pipe.to("cuda" if torch.cuda.is_available() else "cpu")
+    return pipe.to("cuda" if torch.cuda.is_available() else "cpu") 
 
 pipe = load_model()
 
